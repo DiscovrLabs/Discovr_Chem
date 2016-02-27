@@ -27,11 +27,6 @@ void ASpawnVolume::Tick( float DeltaTime )
 
 }
 
-void ASpawnVolume::SpawnTable()
-{
-	GetWorld()->SpawnActor<AActor>(PeriodicTableBP, FVector(-274, -2500, 1128), FRotator(0, 90, 0));
-}
-
 void ASpawnVolume::SpawnParticles(int32 GameMode)
 {
 	UWorld* ThisWorld = this->GetWorld();

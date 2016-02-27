@@ -729,8 +729,6 @@ void AChemPlayer::StartChallenge()
 		if (Volume != NULL)
 			Volume->SpawnParticles(1);
 	}
-
-	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(ParticleSpawns[0], &ASpawnVolume::SpawnTable), 20.f, false);
 }
 
 void AChemPlayer::StartRotationScript()

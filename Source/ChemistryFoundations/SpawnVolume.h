@@ -28,7 +28,6 @@ public:
 
 	void SpawnParticles(int32 GameMode);
 	void DeleteParticles();
-	void SpawnTable();
 	TArray<AActor*> SpawnedParticles;
 
 protected:
@@ -40,9 +39,6 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Blueprints")
 		TSubclassOf<AElectron> ElectronBP;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Blueprints")
-		UClass* PeriodicTableBP;
 
 	FVector GetRandomPointInVolume();
 };
