@@ -127,39 +127,40 @@ void AChemPlayer::BeginPlay()
 void AChemPlayer::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime ); 
-	
-	if (StartRotating && !UGameplayStatics::IsGamePaused(GetWorld()))
+	if (Tutorial)
 	{
-		FRotator TempTarget = FMath::RInterpConstantTo(Controller->GetControlRotation(), FRotator(0.f, 270.f, 0.f), DeltaTime, 15.3f);
-		Controller->SetControlRotation(TempTarget);
-		if (Controller->GetControlRotation().Equals(FRotator(0.f, 270.f, 0.f), 2.f))
+		if (StartRotating && !UGameplayStatics::IsGamePaused(GetWorld()))
 		{
-			StartRotating = false;
-			GetWorldTimerManager().SetTimer(GamestateTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::StartMovingScript), 2.f, false);
-		}
-	}
-	else if (StartMoving && !UGameplayStatics::IsGamePaused(GetWorld()))
-	{
-		FVector Target = FVector(-280.f,-2550.f,GetActorLocation().Z);
-		FVector TempTarget =  FMath::VInterpTo(this->GetActorLocation(), Target, DeltaTime, 0.35f);
-		this->SetActorLocation(TempTarget);
-
-		if (GetActorLocation().Y < -2400 && LabVisible == false)
-		{
-			UE_LOG(LogTemp, Log, TEXT("Visible"));
-			for (UStaticMeshComponent* TempMesh : LabParts)
+			FRotator TempTarget = FMath::RInterpConstantTo(Controller->GetControlRotation(), FRotator(0.f, 270.f, 0.f), DeltaTime, 15.3f);
+			Controller->SetControlRotation(TempTarget);
+			if (Controller->GetControlRotation().Equals(FRotator(0.f, 270.f, 0.f), 2.f))
 			{
-				TempMesh->SetVisibility(true);
+				StartRotating = false;
+				GetWorldTimerManager().SetTimer(GamestateTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::StartMovingScript), 2.f, false);
 			}
-			LabVisible = true;
 		}
-
-		if ((this->GetActorLocation() - Target).Size() < 1)
+		else if (StartMoving && !UGameplayStatics::IsGamePaused(GetWorld()))
 		{
-			StartMoving = false;
+			FVector Target = FVector(-280.f, -2550.f, GetActorLocation().Z);
+			FVector TempTarget = FMath::VInterpTo(this->GetActorLocation(), Target, DeltaTime, 0.35f);
+			this->SetActorLocation(TempTarget);
+
+			if (GetActorLocation().Y < -2400 && LabVisible == false)
+			{
+				UE_LOG(LogTemp, Log, TEXT("Visible"));
+				for (UStaticMeshComponent* TempMesh : LabParts)
+				{
+					TempMesh->SetVisibility(true);
+				}
+				LabVisible = true;
+			}
+
+			if ((this->GetActorLocation() - Target).Size() < 1)
+			{
+				StartMoving = false;
+			}
 		}
 	}
-	
 }
 
 // Called to bind functionality to input
@@ -705,7 +706,7 @@ void AChemPlayer::StartScript()
 	
 	for (ASpawnVolume* Volume : ParticleSpawns)
 	{
-		if (Volume != NULL)
+		if (Volume != NULL && Volume->ActorHasTag("Spawn1"))
 			Volume->SpawnParticles(0);
 	}
 }
@@ -723,10 +724,11 @@ void AChemPlayer::StartChallenge()
 	ChallengeState = 1;
 	LastActorSpawned = 4;
 	SpawnElementSymbol();
+	SetActorLocation(FVector(-5030, -1629, 1110));
 
 	for (ASpawnVolume* Volume : ParticleSpawns)
 	{
-		if (Volume != NULL)
+		if (Volume != NULL && Volume->ActorHasTag("Spawn2"))
 			Volume->SpawnParticles(1);
 	}
 }
