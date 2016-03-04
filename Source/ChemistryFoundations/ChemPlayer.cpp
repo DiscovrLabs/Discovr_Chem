@@ -300,7 +300,10 @@ void AChemPlayer::MakeMolecule(ASubAtomic_Particle* Particle)
 		CurrentMolecule.AtomIDs.RemoveAt(AtomIndex);
 
 		if (CurrentMolecule.AtomIDs.Num() == 0)
+		{
+			SpawnTutorialEndSequence();
 			GameStateIncrement();
+		}
 	}
 	LastFullAtomTag--;
 }
@@ -496,7 +499,6 @@ void AChemPlayer::InitializeButtons()
 	{
 		AChallengeButton* TempButton = ThisWorld->SpawnActor<AChallengeButton>(ButtonBP,ButtonSpawns[i], FRotator(0, 0, 90.f));
 		TempButton->Num = i;
-		
 		TempButton->ButtonMesh->SetMaterial(0, ButtonMats[i]);
 		DisableActor(TempButton, true);
 		ButtonsInScene.Add(TempButton);
@@ -634,6 +636,7 @@ void AChemPlayer::OnAudioFinished()
 			GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::SpawnScriptedActor), 29.f, false);
 			break;
 		case 10:
+			TargetPoint = FVector(-272, -2864, 1170);
 			SpawnAtom(AllAtoms[0], FVector(-362.f, -3091.f, 1106.f));
 			SpawnAtom(AllAtoms[0], FVector(-362.f, -3091.f, 1200.f));
 			SpawnAtom(AllAtoms[2], FVector(-154.f, -3091.f, 1179.f));
@@ -656,6 +659,8 @@ void AChemPlayer::OnAudioFinished()
 		{
 		case 1:
 			ChallengeIncrement();
+			InitializeButtons();
+			SpawnElementSymbol();
 			break;
 		case 2:
 			CanSelect = true;
@@ -713,6 +718,7 @@ void AChemPlayer::StartScript()
 
 void AChemPlayer::StartChallenge()
 {
+	TargetPoint = FVector(-5030, -1910, 1200);
 	CurrentAtom = AllAtoms[0];
 	AudioPlayer->SetSound(ChallengeAudioClips[0]);
 	AudioPlayer->Play(0.001f);
@@ -720,10 +726,8 @@ void AChemPlayer::StartChallenge()
 	SpawnNucleus();
 	CurrentAtom.IncomingElectrons = 0;
 	CanSelect = false;
-	InitializeButtons();
 	ChallengeState = 1;
 	LastActorSpawned = 4;
-	SpawnElementSymbol();
 	SetActorLocation(FVector(-5030, -1629, 1110));
 
 	for (ASpawnVolume* Volume : ParticleSpawns)
@@ -787,6 +791,28 @@ void AChemPlayer::DeleteElementSymbol()
 {
 	if (CurrentElementSymbol != NULL)
 		CurrentElementSymbol->Destroy();
+}
+
+void AChemPlayer::SpawnTutorialEndSequence()
+{
+	GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_ATOMS), 6.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Earth), 15.f, false);
+}
+
+void AChemPlayer::EndSequenceHelper_ATOMS()
+{
+	AActor* Temp = GetWorld()->SpawnActor<AActor>(ActorToSpawn[9], LocationToSpawn[5], RotationToSpawn[5]);
+	Temp->SetLifeSpan(ActorLifespans[4]);
+}
+
+void AChemPlayer::EndSequenceHelper_Molecules()
+{
+}
+
+void AChemPlayer::EndSequenceHelper_Earth()
+{
+	AActor* Temp = GetWorld()->SpawnActor<AActor>(ActorToSpawn[10], LocationToSpawn[6], RotationToSpawn[6]);
+	Temp->SetLifeSpan(ActorLifespans[5]);
 }
 
 void AChemPlayer::SpawnValenceRing()

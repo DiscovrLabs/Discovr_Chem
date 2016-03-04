@@ -235,6 +235,10 @@ protected:
 	//void DeleteUnUsedParticles();
 	void SpawnElementSymbol();
 	void DeleteElementSymbol();
+	void SpawnTutorialEndSequence();
+	void EndSequenceHelper_ATOMS();
+	void EndSequenceHelper_Molecules();
+	void EndSequenceHelper_Earth();
 
 	/***********************************************************************************************************************************************
 	* Buttons
