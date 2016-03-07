@@ -121,6 +121,7 @@ void AChemPlayer::BeginPlay()
 	}
 
 	CurrentAtom = AllAtoms[0];
+	//SpawnTutorialEndSequence();
 }
 
 // Called every frame
@@ -795,8 +796,9 @@ void AChemPlayer::DeleteElementSymbol()
 
 void AChemPlayer::SpawnTutorialEndSequence()
 {
-	GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_ATOMS), 6.f, false);
-	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Earth), 15.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_ATOMS), 4.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Molecules), 7.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer3, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Earth), 9.f, false);
 }
 
 void AChemPlayer::EndSequenceHelper_ATOMS()
@@ -807,12 +809,14 @@ void AChemPlayer::EndSequenceHelper_ATOMS()
 
 void AChemPlayer::EndSequenceHelper_Molecules()
 {
+	AActor* Temp = GetWorld()->SpawnActor<AActor>(ActorToSpawn[11], LocationToSpawn[7], RotationToSpawn[7]);
+	Temp->SetLifeSpan(ActorLifespans[4]);
 }
 
 void AChemPlayer::EndSequenceHelper_Earth()
 {
 	AActor* Temp = GetWorld()->SpawnActor<AActor>(ActorToSpawn[10], LocationToSpawn[6], RotationToSpawn[6]);
-	Temp->SetLifeSpan(ActorLifespans[5]);
+	Temp->SetLifeSpan(ActorLifespans[4]);
 }
 
 void AChemPlayer::SpawnValenceRing()

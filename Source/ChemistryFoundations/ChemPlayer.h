@@ -228,6 +228,7 @@ protected:
 
 	FTimerHandle SpawnTimer;
 	FTimerHandle SpawnTimer2;
+	FTimerHandle SpawnTimer3;
 	int32 LastActorSpawned;
 	AActor* CurrentElementSymbol;
 
