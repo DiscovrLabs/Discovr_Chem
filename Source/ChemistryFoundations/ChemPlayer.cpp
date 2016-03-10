@@ -142,7 +142,7 @@ void AChemPlayer::Tick( float DeltaTime )
 		}
 		else if (StartMoving && !UGameplayStatics::IsGamePaused(GetWorld()))
 		{
-			FVector Target = FVector(-280.f, -2550.f, GetActorLocation().Z);
+			FVector Target = FVector(-280.f, -2700.f, GetActorLocation().Z);
 			FVector TempTarget = FMath::VInterpTo(this->GetActorLocation(), Target, DeltaTime, 0.35f);
 			this->SetActorLocation(TempTarget);
 
