@@ -154,6 +154,7 @@ void AChemPlayer::Tick( float DeltaTime )
 					TempMesh->SetVisibility(true);
 				}
 				LabVisible = true;
+				SpawnUsableParticles();
 			}
 
 			if ((this->GetActorLocation() - Target).Size() < 1)
@@ -709,7 +710,10 @@ void AChemPlayer::StartScript()
 	AudioPlayer->SetSound(TutorialAudioClips[0]);
 	AudioPlayer->Play(0.001f);
 	GetWorldTimerManager().SetTimer(GamestateTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::StartRotationScript), 9.f, false);
-	
+}
+
+void AChemPlayer::SpawnUsableParticles()
+{
 	for (ASpawnVolume* Volume : ParticleSpawns)
 	{
 		if (Volume != NULL && Volume->ActorHasTag("Spawn1"))

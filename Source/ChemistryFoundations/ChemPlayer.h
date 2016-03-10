@@ -108,6 +108,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Scripting")
 		void StartScript();
 
+	void SpawnUsableParticles();
+
 	UFUNCTION(BlueprintCallable, Category = "Scripting")
 		void StartChallenge();
 
