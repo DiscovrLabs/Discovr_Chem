@@ -15,6 +15,7 @@ void ANeutron::Tick(float DeltaTime)
 		if ((this->GetActorLocation() - Target).Size() < 1)
 		{
 			this->ShouldMove = false;
+			SetActorRotation(FRotator::ZeroRotator);
 		}
 	}
 

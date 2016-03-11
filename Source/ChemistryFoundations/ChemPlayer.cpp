@@ -142,13 +142,12 @@ void AChemPlayer::Tick( float DeltaTime )
 		}
 		else if (StartMoving && !UGameplayStatics::IsGamePaused(GetWorld()))
 		{
-			FVector Target = FVector(-280.f, -2700.f, GetActorLocation().Z);
+			FVector Target = FVector(-280.f, -2640.f, GetActorLocation().Z);
 			FVector TempTarget = FMath::VInterpTo(this->GetActorLocation(), Target, DeltaTime, 0.35f);
 			this->SetActorLocation(TempTarget);
 
-			if (GetActorLocation().Y < -2400 && LabVisible == false)
+			if (GetActorLocation().Y < -2375 && LabVisible == false)
 			{
-				UE_LOG(LogTemp, Log, TEXT("Visible"));
 				for (UStaticMeshComponent* TempMesh : LabParts)
 				{
 					TempMesh->SetVisibility(true);
@@ -800,9 +799,9 @@ void AChemPlayer::DeleteElementSymbol()
 
 void AChemPlayer::SpawnTutorialEndSequence()
 {
-	GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_ATOMS), 4.f, false);
-	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Molecules), 7.f, false);
-	GetWorldTimerManager().SetTimer(SpawnTimer3, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Earth), 9.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_ATOMS), 6.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer2, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Molecules), 8.f, false);
+	GetWorldTimerManager().SetTimer(SpawnTimer3, FTimerDelegate::CreateUObject(this, &AChemPlayer::EndSequenceHelper_Earth), 11.5f, false);
 }
 
 void AChemPlayer::EndSequenceHelper_ATOMS()

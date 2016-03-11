@@ -30,6 +30,13 @@ void ASpawnVolume::Tick( float DeltaTime )
 void ASpawnVolume::SpawnParticles(int32 GameMode)
 {
 	UWorld* ThisWorld = this->GetWorld();
+
+	float Yaw = 0;
+	if (ActorHasTag("0"))
+		Yaw = -60;
+	else
+		Yaw = 60;
+
 	switch (GameMode)
 	{
 		//Tutorial Mode
@@ -37,9 +44,9 @@ void ASpawnVolume::SpawnParticles(int32 GameMode)
 		//Spawn 2 Protons, 2 Neutrons, and 2 Electrons
 		for (int i = 0; i < 2; i++)
 		{
-			AProton* TempProton = ThisWorld->SpawnActor<AProton>(ProtonBP, GetRandomPointInVolume(), FRotator::ZeroRotator);
-			ANeutron* TempNeutron = ThisWorld->SpawnActor<ANeutron>(NeutronBP, GetRandomPointInVolume(), FRotator::ZeroRotator);
-			AElectron* TempElectron = ThisWorld->SpawnActor<AElectron>(ElectronBP, GetRandomPointInVolume(), FRotator::ZeroRotator);
+			AProton* TempProton = ThisWorld->SpawnActor<AProton>(ProtonBP, GetRandomPointInVolume(), FRotator(0.0f, Yaw, 0.0f));
+			ANeutron* TempNeutron = ThisWorld->SpawnActor<ANeutron>(NeutronBP, GetRandomPointInVolume(), FRotator(0.0f, Yaw, 0.0f));
+			AElectron* TempElectron = ThisWorld->SpawnActor<AElectron>(ElectronBP, GetRandomPointInVolume(), FRotator(0.0f, Yaw, 0.0f));
 
 			SpawnedParticles.Add(TempProton);
 			SpawnedParticles.Add(TempNeutron);
