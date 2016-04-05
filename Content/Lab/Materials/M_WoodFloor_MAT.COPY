@@ -1,0 +1,718 @@
+Begin Object Class=Material Name="M_WoodFloor_MAT"
+   Begin Object Class=MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=MaterialExpressionAdd Name="MaterialExpressionAdd_2"
+   End Object
+   Begin Object Class=MaterialExpressionAdd Name="MaterialExpressionAdd_3"
+   End Object
+   Begin Object Class=MaterialExpressionAdd Name="MaterialExpressionAdd_4"
+   End Object
+   Begin Object Class=MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_87"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_88"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_89"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_90"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_91"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_92"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_93"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_94"
+   End Object
+   Begin Object Class=MaterialExpressionComment Name="MaterialExpressionComment_95"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_10"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_7"
+   End Object
+   Begin Object Class=MaterialExpressionConstant Name="MaterialExpressionConstant_9"
+   End Object
+   Begin Object Class=MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1"
+   End Object
+   Begin Object Class=MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_2"
+   End Object
+   Begin Object Class=MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_12"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_11"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_12"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_13"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_14"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_15"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_16"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_17"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_3"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_4"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_5"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_7"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_8"
+   End Object
+   Begin Object Class=MaterialExpressionMultiply Name="MaterialExpressionMultiply_9"
+   End Object
+   Begin Object Class=MaterialExpressionPower Name="MaterialExpressionPower_0"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_17"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_18"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_19"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_5"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_7"
+   End Object
+   Begin Object Class=MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_8"
+   End Object
+   Begin Object Class=MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_2"
+   End Object
+   Begin Object Class=MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_4"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_5"
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_6"
+   End Object
+   Begin Object Class=MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionConstant3Vector'M_WoodFloor_MAT:MaterialExpressionConstant3Vector_2')
+      B=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_5')
+      MaterialExpressionEditorX=-2808
+      MaterialExpressionEditorY=2037
+      MaterialExpressionGuid=D548859C4725DFFC6E60ABA539013D6E
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_0',OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_4')
+      MaterialExpressionEditorX=-1948
+      MaterialExpressionEditorY=3148
+      MaterialExpressionGuid=6F5E40C840EF76A1D601A29C2E85E073
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_2"
+      A=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_10')
+      B=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_4')
+      MaterialExpressionEditorX=-2516
+      MaterialExpressionEditorY=1932
+      MaterialExpressionGuid=616B045E4FCA1FCE6A4DE7BF656377E5
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'M_WoodFloor_MAT:MaterialExpressionMaterialFunctionCall_12',OutputIndex=1)
+      B=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_11')
+      MaterialExpressionEditorX=-3042
+      MaterialExpressionEditorY=-2467
+      MaterialExpressionGuid=AB7165A34C38F3CD4D7FB7A5B80CA956
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_4"
+      A=(Expression=MaterialExpressionAdd'M_WoodFloor_MAT:MaterialExpressionAdd_3')
+      B=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_12')
+      MaterialExpressionEditorX=-2896
+      MaterialExpressionEditorY=-2396
+      MaterialExpressionGuid=D623ED4343CBA334635E0BA64AB975D5
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionAdd'M_WoodFloor_MAT:MaterialExpressionAdd_1')
+      MaterialExpressionEditorX=-1608
+      MaterialExpressionEditorY=3102
+      MaterialExpressionGuid=28C68A15405F85B0A7C83A9EC5CF6D73
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_87"
+      SizeX=1317
+      SizeY=568
+      Text="Wood scale and rotation"
+      MaterialExpressionEditorX=-3932
+      MaterialExpressionEditorY=-2631
+      MaterialExpressionGuid=5E4339774A422FD7408A229C7B473080
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_88"
+      SizeX=1915
+      SizeY=836
+      Text="UV offset for wood planks"
+      MaterialExpressionEditorX=-6051
+      MaterialExpressionEditorY=-2082
+      MaterialExpressionGuid=A07CC63C46E8401DA01A8C9B3CAA5F2E
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_89"
+      SizeX=927
+      SizeY=536
+      Text="Ambient Occlusion"
+      MaterialExpressionEditorX=-2498
+      MaterialExpressionEditorY=3061
+      MaterialExpressionGuid=AB2DEBE140ADD45895F0998C674B3D16
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_90"
+      SizeX=512
+      SizeY=532
+      Text="Plank Scale"
+      MaterialExpressionEditorX=-6936
+      MaterialExpressionEditorY=151
+      MaterialExpressionGuid=AD5FB201414E1526E23BF898F10FB37A
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_91"
+      SizeX=1071
+      SizeY=493
+      Text="Roughness"
+      MaterialExpressionEditorX=-3045
+      MaterialExpressionEditorY=-667
+      MaterialExpressionGuid=5E21361E4F69C2AAA74CE9B87050386F
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_92"
+      SizeX=1412
+      SizeY=916
+      Text="Dust and Scratches"
+      MaterialExpressionEditorX=-4923
+      MaterialExpressionEditorY=-221
+      MaterialExpressionGuid=C966FD8A4AC91497DA18E4A66D2ED944
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_93"
+      SizeX=523
+      SizeY=482
+      Text="Specular"
+      MaterialExpressionEditorX=-2132
+      MaterialExpressionEditorY=175
+      MaterialExpressionGuid=39A1F8C14AF74F431B73A8A8D01C91AF
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_94"
+      SizeX=1193
+      SizeY=682
+      Text="Normals"
+      MaterialExpressionEditorX=-3672
+      MaterialExpressionEditorY=1798
+      MaterialExpressionGuid=A3B0D929425396C92A54A195B5D20F52
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionComment_95"
+      SizeX=1138
+      SizeY=686
+      Text="Diffuse"
+      MaterialExpressionEditorX=-1743
+      MaterialExpressionEditorY=-2665
+      MaterialExpressionGuid=70C3997949D013B4352CB4A317132525
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=-476
+      MaterialExpressionEditorY=-127
+      MaterialExpressionGuid=5EFE0B9043EFC3377CEF1DB98D8E556E
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_10"
+      R=0.500000
+      MaterialExpressionEditorX=-5863
+      MaterialExpressionEditorY=-1433
+      MaterialExpressionGuid=78CDCEB4441F7A464F972199D32449BC
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_7"
+      R=3.330000
+      MaterialExpressionEditorX=-4505
+      MaterialExpressionEditorY=-2018
+      MaterialExpressionGuid=6C6852A34AA577BD3702B485A8E274D6
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_9"
+      R=7.773300
+      MaterialExpressionEditorX=-4532
+      MaterialExpressionEditorY=-1810
+      MaterialExpressionGuid=E728784346DBB8D88E3D7FAB4150F46C
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=1.000000,G=1.000000,B=0.000000,A=0.000000)
+      MaterialExpressionEditorX=-3265
+      MaterialExpressionEditorY=2057
+      MaterialExpressionGuid=9505D98B4EF724BA233FE99ECA0C4AD3
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1"
+      Constant=(R=1.000000,G=1.000000,B=0.000000,A=0.000000)
+      MaterialExpressionEditorX=-3938
+      MaterialExpressionEditorY=293
+      MaterialExpressionGuid=8A6E1A0847BA64CF235BE58464A6E663
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_2"
+      Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-3485
+      MaterialExpressionEditorY=1963
+      MaterialExpressionGuid=A6EAB5984B215DF7DD72FE8E8EF5DBEA
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_0')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_2')
+      Alpha=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_3')
+      MaterialExpressionEditorX=-2011
+      MaterialExpressionEditorY=-498
+      MaterialExpressionGuid=2E401DDD49D8C03A80CE9C911262FE52
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_12"
+      MaterialFunction=MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.Swizzle'
+      FunctionInputs(0)=(ExpressionInputId=A69F37C24DE1C142F4640887315D5546,Input=(OutputIndex=-1,InputName="XYZ"))
+      FunctionInputs(1)=(ExpressionInputId=D3C8F77B43679D265187C8B179744EF3,Input=(Expression=MaterialExpressionTextureCoordinate'M_WoodFloor_MAT:MaterialExpressionTextureCoordinate_2',InputName="XY"))
+      FunctionOutputs(0)=(ExpressionOutputId=0C61802A4200305BC12289AE0E4C0A23,Output=(OutputName="YXZ"))
+      FunctionOutputs(1)=(ExpressionOutputId=E29D70BA4C6563818D2F7D8D54BA6015,Output=(OutputName="YX"))
+      MaterialExpressionEditorX=-3327
+      MaterialExpressionEditorY=-2606
+      MaterialExpressionGuid=26546696436573DF710B29A61A9E98CB
+      Material=Material'M_WoodFloor_MAT'
+      Outputs(0)=(OutputName="YXZ")
+      Outputs(1)=(OutputName="YX")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionAdd'M_WoodFloor_MAT:MaterialExpressionAdd_0')
+      MaterialExpressionEditorX=-2647
+      MaterialExpressionEditorY=1876
+      MaterialExpressionGuid=2D1A7CA3417C9F2D8BCCB3A87FF51C75
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_11"
+      A=(Expression=MaterialExpressionConstant'M_WoodFloor_MAT:MaterialExpressionConstant_7')
+      B=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_5',OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-4173
+      MaterialExpressionEditorY=-2057
+      MaterialExpressionGuid=64C0922C4AF033039F3DEF9B847518E5
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_12"
+      A=(Expression=MaterialExpressionConstant'M_WoodFloor_MAT:MaterialExpressionConstant_9')
+      B=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_5',OutputIndex=3,Mask=1,MaskB=1)
+      MaterialExpressionEditorX=-4287
+      MaterialExpressionEditorY=-1805
+      MaterialExpressionGuid=641F5E1E4EE1F3C79676A5AB33E166CC
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_13"
+      A=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_9')
+      B=(Expression=MaterialExpressionConstant'M_WoodFloor_MAT:MaterialExpressionConstant_10')
+      MaterialExpressionEditorX=-5496
+      MaterialExpressionEditorY=-1513
+      MaterialExpressionGuid=B02FB8F848BB46B51B8849BF897E7AD0
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_14"
+      A=(Expression=MaterialExpressionVectorParameter'M_WoodFloor_MAT:MaterialExpressionVectorParameter_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_2',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-1211
+      MaterialExpressionEditorY=-2306
+      MaterialExpressionGuid=E8C78C304F4388B959D0F48A2ECB6E22
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_15"
+      A=(Expression=MaterialExpressionConstant3Vector'M_WoodFloor_MAT:MaterialExpressionConstant3Vector_1')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_18')
+      MaterialExpressionEditorX=-3747
+      MaterialExpressionEditorY=342
+      MaterialExpressionGuid=2AF64E0349A04FA169C57F98BEF9E21A
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_16"
+      A=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_4',OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionClamp'M_WoodFloor_MAT:MaterialExpressionClamp_0')
+      MaterialExpressionEditorX=-1887
+      MaterialExpressionEditorY=200
+      MaterialExpressionGuid=19231FC546CC8F184CD2CDB9921DEA05
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_17"
+      A=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_16')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_19')
+      MaterialExpressionEditorX=-1646
+      MaterialExpressionEditorY=277
+      MaterialExpressionGuid=29C5838A4438FC9EF73588BC3AA6E365
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionTextureCoordinate'M_WoodFloor_MAT:MaterialExpressionTextureCoordinate_0')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_17')
+      MaterialExpressionEditorX=-4392
+      MaterialExpressionEditorY=-78
+      MaterialExpressionGuid=13AA89AD4CA0A74E2DF3C992351EE9C9
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3"
+      A=(Expression=MaterialExpressionPower'M_WoodFloor_MAT:MaterialExpressionPower_0')
+      B=(Expression=MaterialExpressionClamp'M_WoodFloor_MAT:MaterialExpressionClamp_0')
+      MaterialExpressionEditorX=-2236
+      MaterialExpressionEditorY=-365
+      MaterialExpressionGuid=2AA6423047D18ADF727308BB2A5BE0EA
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4"
+      A=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_6',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_15')
+      MaterialExpressionEditorX=-3548
+      MaterialExpressionEditorY=165
+      MaterialExpressionGuid=735262D94C30990B701C98805AD6C2F8
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5"
+      A=(Expression=MaterialExpressionConstant3Vector'M_WoodFloor_MAT:MaterialExpressionConstant3Vector_0')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_3')
+      MaterialExpressionEditorX=-2985
+      MaterialExpressionEditorY=2117
+      MaterialExpressionGuid=99B3F7454DFD0F447F92218CD17EE4F7
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_7"
+      A=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_14')
+      B=(Expression=MaterialExpressionClamp'M_WoodFloor_MAT:MaterialExpressionClamp_0')
+      MaterialExpressionEditorX=-642
+      MaterialExpressionEditorY=-2166
+      MaterialExpressionGuid=585DC2264B5EA503719F92BCC5C418BE
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_8"
+      A=(Expression=MaterialExpressionAdd'M_WoodFloor_MAT:MaterialExpressionAdd_4')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_5')
+      MaterialExpressionEditorX=-2652
+      MaterialExpressionEditorY=-2332
+      MaterialExpressionGuid=C6D7B8184E0634AC3B1193AD77171127
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_9"
+      A=(Expression=MaterialExpressionTextureCoordinate'M_WoodFloor_MAT:MaterialExpressionTextureCoordinate_4')
+      B=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_7')
+      MaterialExpressionEditorX=-6461
+      MaterialExpressionEditorY=426
+      MaterialExpressionGuid=322B3D3947F2677690BE37B1F1B74FA8
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionPower_0"
+      Base=(Expression=MaterialExpressionTextureSample'M_WoodFloor_MAT:MaterialExpressionTextureSample_3',OutputIndex=1,Mask=1,MaskR=1)
+      Exponent=(Expression=MaterialExpressionScalarParameter'M_WoodFloor_MAT:MaterialExpressionScalarParameter_8')
+      MaterialExpressionEditorX=-2561
+      MaterialExpressionEditorY=-481
+      MaterialExpressionGuid=04E44FF84206D838357C81B2DE874B91
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=0.800000
+      ParameterName="RoughnessWoodHigh"
+      ExpressionGUID=106BF1BD4D4A2DA9A748B7ACB366E52B
+      Group="Wood"
+      MaterialExpressionEditorX=-2362
+      MaterialExpressionEditorY=-642
+      MaterialExpressionGuid=9DB8CD0946685E4BE21FCAA51DB3DABD
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_17"
+      DefaultValue=3.000000
+      ParameterName="ScaleScratches"
+      ExpressionGUID=F2E8B4CA4491DA5DC36B80AA6773ACE3
+      Group="Scratches"
+      MaterialExpressionEditorX=-4641
+      MaterialExpressionEditorY=53
+      MaterialExpressionGuid=B87E470E4E15EA942F1FB4BD875CDA54
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_18"
+      DefaultValue=1.000000
+      ParameterName="NormalIntesityScratches"
+      ExpressionGUID=E1418C9C485921EF61EA1B8C10B9F674
+      Group="Scratches"
+      MaterialExpressionEditorX=-3963
+      MaterialExpressionEditorY=507
+      MaterialExpressionGuid=8F58E67347D4D5CCB6E4FF84E75B5430
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_19"
+      DefaultValue=1.000000
+      ParameterName="SpecularWood"
+      ExpressionGUID=A82E7545401C1C58B56F73A73B3CC17E
+      Group="Wood"
+      MaterialExpressionEditorX=-1831
+      MaterialExpressionEditorY=462
+      MaterialExpressionGuid=4E9D4A5542A7D22267DABEA6D181452D
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=0.200000
+      ParameterName="RoughnessWoodlow"
+      ExpressionGUID=E37CCDEE45F79B21A5509AABFF21E41E
+      Group="Wood"
+      MaterialExpressionEditorX=-2285
+      MaterialExpressionEditorY=-538
+      MaterialExpressionGuid=D29521CE4F9940BE7FCE089BA4FB7E6F
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=1.000000
+      ParameterName="NormalIntesity"
+      ExpressionGUID=61F9633B45E6EDF99C51768EE37F6E4B
+      Group="Wood"
+      MaterialExpressionEditorX=-3228
+      MaterialExpressionEditorY=2293
+      MaterialExpressionGuid=127D22C7412D09ED414301884B6E6442
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4"
+      ParameterName="AOintesity"
+      ExpressionGUID=B5D607124324EAB8778A2C964B09CF03
+      Group="Wood"
+      MaterialExpressionEditorX=-2112
+      MaterialExpressionEditorY=3380
+      MaterialExpressionGuid=53DD673240BA53EEDC85EA80FC44CAB4
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_5"
+      DefaultValue=1.000000
+      ParameterName="WoodScale"
+      ExpressionGUID=B4857F2E4B6A56D0361B689D9F5C2F40
+      Group="Wood"
+      MaterialExpressionEditorX=-2867
+      MaterialExpressionEditorY=-2250
+      MaterialExpressionGuid=0F38459D4A1D6B0BC1B19BAA305BCCD3
+      Material=Material'M_WoodFloor_MAT'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_7"
+      DefaultValue=1.000000
+      ParameterName="PlankScale"
+      ExpressionGUID=C1F516FE4F0AD32768642480E463C85C
+      Group="Wood"
+      MaterialExpressionEditorX=-6682
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=650543C04894E9DDEED3B28918D9F4DA
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_8"
+      DefaultValue=1.000000
+      ParameterName="WoodgrainContrast"
+      ExpressionGUID=C9C3657B41E1B4FF622D7DAFA1FFD811
+      Group="Wood"
+      MaterialExpressionEditorX=-2741
+      MaterialExpressionEditorY=-400
+      MaterialExpressionGuid=D2E9C995465422F15C71C6A3443C0D8F
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-4736
+      MaterialExpressionEditorY=-196
+      MaterialExpressionGuid=195B02AD4995120A60F621AF5ED85CC3
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_2"
+      MaterialExpressionEditorX=-3745
+      MaterialExpressionEditorY=-2573
+      MaterialExpressionGuid=F0D35FE5413B9CC4D04443AC97F35B0E
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_4"
+      MaterialExpressionEditorX=-6748
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=B500043C4EB7A8FC25EF10B24EF0A72E
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_9')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_WoodFloor_AO.T_WoodFloor_AO'
+      MaterialExpressionEditorX=-2193
+      MaterialExpressionEditorY=3086
+      MaterialExpressionGuid=42486C034628E1133188D08E31497248
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_9')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_WoodFloor_N.T_WoodFloor_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-2930
+      MaterialExpressionEditorY=1823
+      MaterialExpressionGuid=983AABC7426F9B7978BA32805B4555C1
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_8')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_Wood.T_Wood'
+      MaterialExpressionEditorX=-1556
+      MaterialExpressionEditorY=-2338
+      MaterialExpressionGuid=08EA83A04C027BE7FE5815BDFE1A644D
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_8')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_Wood_S.T_Wood_S'
+      MaterialExpressionEditorX=-2746
+      MaterialExpressionEditorY=-621
+      MaterialExpressionGuid=D0F5090B475CCFDC0D0F228561DBF684
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_2')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_DustnScratches_M.T_DustnScratches_M'
+      MaterialExpressionEditorX=-3952
+      MaterialExpressionEditorY=-158
+      MaterialExpressionGuid=D0CDE89E41BF0231BE72E3AF6581FED3
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_5"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_13')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_WoodFloor_AO.T_WoodFloor_AO'
+      MaterialExpressionEditorX=-5130
+      MaterialExpressionEditorY=-1576
+      MaterialExpressionGuid=123F29C74BC7CE34400C9A9939A1EE44
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_6"
+      Coordinates=(Expression=MaterialExpressionMultiply'M_WoodFloor_MAT:MaterialExpressionMultiply_2')
+      Texture=Texture2D'/Game/ArchVis/Textures/T_DustnScratches_N.T_DustnScratches_N'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-3945
+      MaterialExpressionEditorY=88
+      MaterialExpressionGuid=C75A5ECA4D270F876AC80BAEEA7FF7C2
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+      ParameterName="WoodColor"
+      ExpressionGUID=A83C018A4658C959C491E4BBBA0FC8D8
+      Group="Wood"
+      MaterialExpressionEditorX=-1552
+      MaterialExpressionEditorY=-2640
+      MaterialExpressionGuid=AE8F79324E50C14EB7AB0FB3A445FDA5
+      Material=Material'M_WoodFloor_MAT'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   BaseColor=(Expression=MaterialExpressionMultiply'MaterialExpressionMultiply_7')
+   Metallic=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_0')
+   Specular=(Expression=MaterialExpressionMultiply'MaterialExpressionMultiply_17')
+   Roughness=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Normal=(Expression=MaterialExpressionAdd'MaterialExpressionAdd_2')
+   AmbientOcclusion=(OutputIndex=-1)
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionClamp'MaterialExpressionClamp_0'
+   Expressions(1)=MaterialExpressionAdd'MaterialExpressionAdd_1'
+   Expressions(2)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_4'
+   Expressions(3)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_0'
+   Expressions(4)=MaterialExpressionMultiply'MaterialExpressionMultiply_9'
+   Expressions(5)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_7'
+   Expressions(6)=MaterialExpressionTextureCoordinate'MaterialExpressionTextureCoordinate_4'
+   Expressions(7)=MaterialExpressionAdd'MaterialExpressionAdd_2'
+   Expressions(8)=MaterialExpressionMultiply'MaterialExpressionMultiply_4'
+   Expressions(9)=MaterialExpressionMultiply'MaterialExpressionMultiply_15'
+   Expressions(10)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_18'
+   Expressions(11)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_1'
+   Expressions(12)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_6'
+   Expressions(13)=MaterialExpressionMultiply'MaterialExpressionMultiply_2'
+   Expressions(14)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_17'
+   Expressions(15)=MaterialExpressionTextureCoordinate'MaterialExpressionTextureCoordinate_0'
+   Expressions(16)=MaterialExpressionMultiply'MaterialExpressionMultiply_10'
+   Expressions(17)=MaterialExpressionAdd'MaterialExpressionAdd_0'
+   Expressions(18)=MaterialExpressionMultiply'MaterialExpressionMultiply_5'
+   Expressions(19)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_3'
+   Expressions(20)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_0'
+   Expressions(21)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_2'
+   Expressions(22)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(23)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(24)=MaterialExpressionMultiply'MaterialExpressionMultiply_3'
+   Expressions(25)=MaterialExpressionPower'MaterialExpressionPower_0'
+   Expressions(26)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_8'
+   Expressions(27)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_3'
+   Expressions(28)=MaterialExpressionMultiply'MaterialExpressionMultiply_8'
+   Expressions(29)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_5'
+   Expressions(30)=MaterialExpressionAdd'MaterialExpressionAdd_4'
+   Expressions(31)=MaterialExpressionMultiply'MaterialExpressionMultiply_12'
+   Expressions(32)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_5'
+   Expressions(33)=MaterialExpressionMultiply'MaterialExpressionMultiply_13'
+   Expressions(34)=MaterialExpressionConstant'MaterialExpressionConstant_10'
+   Expressions(35)=MaterialExpressionConstant'MaterialExpressionConstant_9'
+   Expressions(36)=MaterialExpressionAdd'MaterialExpressionAdd_3'
+   Expressions(37)=MaterialExpressionMultiply'MaterialExpressionMultiply_11'
+   Expressions(38)=MaterialExpressionConstant'MaterialExpressionConstant_7'
+   Expressions(39)=MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_12'
+   Expressions(40)=MaterialExpressionTextureCoordinate'MaterialExpressionTextureCoordinate_2'
+   Expressions(41)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_2'
+   Expressions(42)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_0'
+   Expressions(43)=MaterialExpressionMultiply'MaterialExpressionMultiply_17'
+   Expressions(44)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_19'
+   Expressions(45)=MaterialExpressionMultiply'MaterialExpressionMultiply_16'
+   Expressions(46)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_4'
+   Expressions(47)=MaterialExpressionConstant'MaterialExpressionConstant_0'
+   Expressions(48)=MaterialExpressionMultiply'MaterialExpressionMultiply_7'
+   Expressions(49)=MaterialExpressionMultiply'MaterialExpressionMultiply_14'
+   Expressions(50)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   Expressions(51)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_0'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_87'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_88'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_89'
+   EditorComments(3)=MaterialExpressionComment'MaterialExpressionComment_90'
+   EditorComments(4)=MaterialExpressionComment'MaterialExpressionComment_91'
+   EditorComments(5)=MaterialExpressionComment'MaterialExpressionComment_92'
+   EditorComments(6)=MaterialExpressionComment'MaterialExpressionComment_93'
+   EditorComments(7)=MaterialExpressionComment'MaterialExpressionComment_94'
+   EditorComments(8)=MaterialExpressionComment'MaterialExpressionComment_95'
+   MaterialFunctionInfos(0)=(StateId=7A7CA8A84D2472CFAA326387EBA2DE06,Function=MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.Swizzle')
+   StateId=D6F88E8341EABFDAB1EBC68A0D6950D0
+   ReferencedTextureGuids(0)=E678E665451C6FB627C0DCA34A2E857F
+   ReferencedTextureGuids(1)=E3C1FE8C4B3EBAC64D3F9BADC383105B
+   ReferencedTextureGuids(2)=24CBE106447DB40DBD11BB907DC7C2A3
+   ReferencedTextureGuids(3)=5FFAAB5D4C9AA897F84FBD8394C7C84B
+   ReferencedTextureGuids(4)=0EDCA63646ED45BDF402589A7A9ECD7A
+   ReferencedTextureGuids(5)=DCE42965475442E9EB00D39A05DDA2C9
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_1'
+   LightingGuid=781F48EB4AABC330497B0CA2B8E0BF76
+End Object

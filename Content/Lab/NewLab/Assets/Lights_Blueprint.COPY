@@ -1,0 +1,178 @@
+Begin Object Class=Blueprint Name="Lights_Blueprint"
+   Begin Object Class=EdGraph Name="UserConstructionScript"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_487"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49379"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="EventGraph"
+      Begin Object Class=K2Node_Event Name="K2Node_Event_212"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49380"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49381"
+         End Object
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_213"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49382"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49383"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49384"
+         End Object
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_214"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49385"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49386"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49387"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Class=EdGraph Name="EdGraph_308"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_487"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_49379"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="UserConstructionScript"
+      Begin Object Name="K2Node_FunctionEntry_487"
+         Begin Object Name="EdGraphPin_49379"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         Pins(0)=EdGraphPin'EdGraphPin_49379'
+         NodeGuid=BA33F4A642BB6C500EA3A49CE05707BC
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_487'
+      bAllowDeletion=False
+      GraphGuid=B58454DF4689741CFE21999B90629BC9
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_Event_212"
+         Begin Object Name="EdGraphPin_49380"
+            PinName="OutputDelegate"
+            Direction=EGPD_Output
+            PinType=(PinCategory="delegate",PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveBeginPlay"))
+         End Object
+         Begin Object Name="EdGraphPin_49381"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         EventReference=(MemberParent=BlueprintGeneratedClass'Lights_Blueprint_C',MemberName="ReceiveBeginPlay")
+         bOverrideFunction=True
+         Pins(0)=EdGraphPin'EdGraphPin_49380'
+         Pins(1)=EdGraphPin'EdGraphPin_49381'
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=53A723E1408EA746832C6EA6B0F4E169
+         bIsNodeEnabled=False
+      End Object
+      Begin Object Name="K2Node_Event_213"
+         Begin Object Name="EdGraphPin_49382"
+            PinName="OutputDelegate"
+            Direction=EGPD_Output
+            PinType=(PinCategory="delegate",PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveActorBeginOverlap"))
+         End Object
+         Begin Object Name="EdGraphPin_49383"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_49384"
+            PinName="OtherActor"
+            PinToolTip="Other Actor\nActor Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+         End Object
+         EventReference=(MemberParent=BlueprintGeneratedClass'Lights_Blueprint_C',MemberName="ReceiveActorBeginOverlap")
+         bOverrideFunction=True
+         Pins(0)=EdGraphPin'EdGraphPin_49382'
+         Pins(1)=EdGraphPin'EdGraphPin_49383'
+         Pins(2)=EdGraphPin'EdGraphPin_49384'
+         NodePosY=200
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=FD57BE0845F1AE48AE5CF58CB24A22A7
+         bIsNodeEnabled=False
+      End Object
+      Begin Object Name="K2Node_Event_214"
+         Begin Object Name="EdGraphPin_49385"
+            PinName="OutputDelegate"
+            Direction=EGPD_Output
+            PinType=(PinCategory="delegate",PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveTick"))
+         End Object
+         Begin Object Name="EdGraphPin_49386"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_49387"
+            PinName="DeltaSeconds"
+            PinToolTip="Delta Seconds\nFloat"
+            Direction=EGPD_Output
+            PinType=(PinCategory="float")
+            DefaultValue="0.0"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         EventReference=(MemberParent=BlueprintGeneratedClass'Lights_Blueprint_C',MemberName="ReceiveTick")
+         bOverrideFunction=True
+         Pins(0)=EdGraphPin'EdGraphPin_49385'
+         Pins(1)=EdGraphPin'EdGraphPin_49386'
+         Pins(2)=EdGraphPin'EdGraphPin_49387'
+         NodePosY=400
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=E3E60C3E4BC399471321EA947E837E3B
+         bIsNodeEnabled=False
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_Event'K2Node_Event_212'
+      Nodes(1)=K2Node_Event'K2Node_Event_213'
+      Nodes(2)=K2Node_Event'K2Node_Event_214'
+      bAllowDeletion=False
+      GraphGuid=35B9337742D8EBA87236F5957785A983
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="EdGraph_308"
+      Begin Object Name="K2Node_FunctionEntry_487"
+         Begin Object Name="EdGraphPin_49379"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         Pins(0)=EdGraphPin'EdGraphPin_49379'
+         NodeGuid=BA33F4A642BB6C500EA3A49CE05707BC
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_487'
+      bAllowDeletion=False
+      GraphGuid=B58454DF4689741CFE21999B90629BC9
+   End Object
+   ParentClass=Class'/Script/Engine.Actor'
+   SimpleConstructionScript=SimpleConstructionScript'Lights_Blueprint_C:SimpleConstructionScript_0'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   FunctionGraphs(0)=EdGraph'UserConstructionScript'
+   CategorySorting(0)="Default"
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'UserConstructionScript',SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObject=EdGraph'EventGraph',SavedZoomAmount=1.000000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_0'
+   GeneratedClass=BlueprintGeneratedClass'Lights_Blueprint_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=18D6E65A4AA27346B3B225B6EBD0428A
+End Object
