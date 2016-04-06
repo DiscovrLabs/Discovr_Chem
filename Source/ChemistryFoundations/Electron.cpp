@@ -31,7 +31,6 @@ void AElectron::Tick(float DeltaTime)
 		if ((this->GetActorLocation() - Target).Size() < 1)
 		{
 			AChemPlayer* TempPlayer = Cast<AChemPlayer>(Player);
-			//UE_LOG(LogTemp, Log, TEXT("incoming electrons is %d"), TempPlayer->CurrentAtom.IncomingElectrons);
 			(Spawned) ? MyAtom->IncomingElectrons-- : TempPlayer->CurrentAtom.IncomingElectrons--;
 			if (MyAtom != NULL)
 			{
@@ -43,6 +42,7 @@ void AElectron::Tick(float DeltaTime)
 			}
 			this->ShouldMove = false;
 			this->Following = true;
+			SetActorRotation(FRotator::ZeroRotator);
 		}
 	}
 	else if (this->ShouldMoveVector)
