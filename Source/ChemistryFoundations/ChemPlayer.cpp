@@ -499,13 +499,16 @@ void AChemPlayer::InitializeButtons()
 	for (int i = 0; i < ButtonSpawns.Num(); i++)
 	{
 		AChallengeButton* TempButton = ThisWorld->SpawnActor<AChallengeButton>(ButtonBP,ButtonSpawns[i], FRotator(0, 0, 90.f));
-		TempButton->Num = i;
-		TempButton->ButtonMesh->SetMaterial(0, ButtonMats[i]);
-		DisableActor(TempButton, true);
-		ButtonsInScene.Add(TempButton);
+		if (TempButton)
+		{
+			TempButton->Num = i;
+			TempButton->ButtonMesh->SetMaterial(0, ButtonMats[i]);
+			DisableActor(TempButton, true);
+			ButtonsInScene.Add(TempButton);
+		}
 	}
 	ButtonsEnabled = false;
-	DisableActor(ButtonsInScene[ButtonsInScene.Num() - 1], false);
+	//DisableActor(ButtonsInScene[ButtonsInScene.Num() - 1], false);
 }
 
 void AChemPlayer::ClickButton(AActor* ActorHit)
