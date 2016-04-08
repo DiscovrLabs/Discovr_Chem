@@ -158,6 +158,8 @@ void AChemPlayer::Tick( float DeltaTime )
 				{
 					TempMesh->SetVisibility(true);
 				}
+				PALs[0]->StaticMesh->SetVisibility(true);
+				PALs[1]->StaticMesh->SetVisibility(true);
 				LabVisible = true;
 				SpawnUsableParticles();
 			}
@@ -513,7 +515,7 @@ void AChemPlayer::InitializeButtons()
 		}
 	}
 	ButtonsEnabled = false;
-	//DisableActor(ButtonsInScene[ButtonsInScene.Num() - 1], false);
+	DisableActor(ButtonsInScene[ButtonsInScene.Num() - 1], false);
 }
 
 void AChemPlayer::ClickButton(AActor* ActorHit)
@@ -716,6 +718,10 @@ void AChemPlayer::StartScript()
 	GameState = 1;
 	AudioPlayer->SetSound(TutorialAudioClips[0]);
 	AudioPlayer->Play(0.001f);
+	for (APAL* PAL : PALs)
+	{
+		PAL->UpdateAudioInfo(TutorialAudioClips[0]);
+	}
 	GetWorldTimerManager().SetTimer(GamestateTimer, FTimerDelegate::CreateUObject(this, &AChemPlayer::StartRotationScript), 9.f, false);
 }
 

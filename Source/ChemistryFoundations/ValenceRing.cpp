@@ -41,7 +41,7 @@ void AValenceRing::SpawnNodes(int NodeCount)
 	{
 		float xPos = radius * FMath::Cos((angle * (i + 1)) * PI / 180);
 		float yPos = radius * FMath::Sin((angle * (i + 1)) * PI / 180);
-		USceneComponent* Node = ConstructObject<USceneComponent>(USceneComponent::StaticClass());
+		USceneComponent* Node = NewObject<USceneComponent>(USceneComponent::StaticClass());
 		Node->AttachTo(RootComponent);
 		Node->AddLocalOffset(FVector(xPos, yPos, 0));
 		Nodes.Add(Node);

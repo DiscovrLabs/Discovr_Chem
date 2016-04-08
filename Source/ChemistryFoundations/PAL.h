@@ -23,9 +23,10 @@ public:
 	virtual void Tick( float DeltaSeconds ) override;
 
 	void UpdateAudioInfo(USoundBase* _Clip);
-protected:
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
 		UStaticMeshComponent* StaticMesh;
+protected:
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite, Category = "Movement")
 		ASplineActor* SplineActor;
