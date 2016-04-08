@@ -121,7 +121,13 @@ void AChemPlayer::BeginPlay()
 	}
 
 	CurrentAtom = AllAtoms[0];
-	//SpawnTutorialEndSequence();
+
+	TArray<AActor*> TempActors;
+	UGameplayStatics::GetAllActorsOfClass(MyWorld, APAL::StaticClass(), TempActors);
+	for (AActor* TempActor : TempActors)
+	{
+		PALs.Add(Cast<APAL>(TempActor));
+	}
 }
 
 // Called every frame
@@ -362,7 +368,6 @@ void AChemPlayer::Raycast()
 				ClickButton(ActorHit);
 		}
 	}
-
 }
 
 void AChemPlayer::TutorialMode(AActor* ActorHit)
@@ -729,6 +734,10 @@ void AChemPlayer::StartChallenge()
 	CurrentAtom = AllAtoms[0];
 	AudioPlayer->SetSound(ChallengeAudioClips[0]);
 	AudioPlayer->Play(0.001f);
+	for (APAL* PAL : PALs)
+	{
+		PAL->UpdateAudioInfo(ChallengeAudioClips[0]);
+	}
 	StartRotationScript();
 	SpawnNucleus();
 	CurrentAtom.IncomingElectrons = 0;
@@ -759,6 +768,10 @@ void AChemPlayer::GameStateIncrement()
 	AudioPlayer->SetSound(TutorialAudioClips[GameState]);
 	AudioPlayer->Play(0.001f);
 	GameState++;
+	for (APAL* PAL : PALs)
+	{
+		PAL->UpdateAudioInfo(TutorialAudioClips[GameState]);
+	}
 }
 
 void AChemPlayer::ChallengeIncrement()
@@ -766,6 +779,10 @@ void AChemPlayer::ChallengeIncrement()
 	AudioPlayer->SetSound(ChallengeAudioClips[ChallengeState]);
 	AudioPlayer->Play(0.001f);
 	ChallengeState++;
+	for (APAL* PAL : PALs)
+	{
+		PAL->UpdateAudioInfo(ChallengeAudioClips[ChallengeState]);
+	}
 }
 
 void AChemPlayer::TriggerErrorSound()

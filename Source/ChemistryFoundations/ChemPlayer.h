@@ -13,6 +13,7 @@
 #include "ParticleContainer.h"
 #include "ChallengeButton.h"
 #include "SpawnVolume.h"
+#include "PAL.h"
 #include "ChemPlayer.generated.h"
 
 #define FAST 360
@@ -145,6 +146,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio")
 		TArray<USoundBase*> ChallengeAudioClips;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PAL")
+		TArray<APAL*> PALs;
 
 	/***********************************************************************************************************************************************
 	* Atoms and Molecules Data
