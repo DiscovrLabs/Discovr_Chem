@@ -11,6 +11,7 @@ AElectron::AElectron()
 
 void AElectron::BeginPlay()
 {
+	Super::BeginPlay();
 	Player = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	Spawned = false;
 	ShouldMoveVector = false;

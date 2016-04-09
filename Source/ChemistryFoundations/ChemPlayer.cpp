@@ -148,7 +148,7 @@ void AChemPlayer::Tick( float DeltaTime )
 		}
 		else if (StartMoving && !UGameplayStatics::IsGamePaused(GetWorld()))
 		{
-			FVector Target = FVector(-280.f, -2640.f, GetActorLocation().Z);
+			FVector Target = FVector(-280.f, -2640.f, 1140.f);
 			FVector TempTarget = FMath::VInterpTo(this->GetActorLocation(), Target, DeltaTime, 0.35f);
 			this->SetActorLocation(TempTarget);
 
@@ -750,7 +750,7 @@ void AChemPlayer::StartChallenge()
 	CanSelect = false;
 	ChallengeState = 1;
 	LastActorSpawned = 4;
-	SetActorLocation(FVector(-5030, -1629, 1110));
+	SetActorLocation(FVector(-5030, -1629, 1180));
 
 	for (ASpawnVolume* Volume : ParticleSpawns)
 	{
